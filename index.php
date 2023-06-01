@@ -23,7 +23,7 @@
         //     echo $legendas[$i];
         // }
 
-        for ($i = 0; $i < 3; $i++) :
+        for ($i = 0; $i < 3; $i++) : #usamos o forend para finalizar o laço, subistituindo o {}
         ?>
 
             <div class="mb-3 ">
@@ -37,7 +37,16 @@
                     </div>
                 </div>
                 <img src="img/<?php echo $fotos[$i]; ?>" class="img-fluid">
-                <p><?php echo $legendas[$i]; ?></p>
+                <div class="row">
+                    <div class="col-12">
+                        <h4><i class="bi bi-heart"></i>
+                        <i class="bi bi-chat"></i></h4>
+                    </div>
+                    <div class="col-12">
+                        <p><?php echo $legendas[$i]; ?></p>
+                    </div>
+                </div>
+
             </div>
 
         <?php
